@@ -26,5 +26,23 @@ class MascotaModel extends Model {
     public function dueno() {
         return $this->belongsTo(DuenoModel::class, 'id_dueno', 'id_dueno');
     }   
+
+	//Añadir aquí las funciones personalizadas para MascotaModel
+	public function getMascotas() {
+		return $this->findAll();
+	}
+
+	public function getMascota($id) {
+		return $this->find($id);
+	}
+
+	public function insertarMascota($data) {
+		return $this->insert($data);
+	}
+
+	public function actualizarMascota($id, $data) {
+		return $this->update($id, $data);
+	}
+	//Fin de añadimiento
 	
 }
