@@ -10,8 +10,7 @@ class DuenoModel extends Model {
 	
 	protected $deletedField  = 'deleted_at';
 	protected $validationRules    = [];
-	protected $validationMessages = [];
-	protected $skipValidation     = true;    
+  
 	
 }
 
